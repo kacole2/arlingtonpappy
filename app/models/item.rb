@@ -53,8 +53,8 @@ class Item < ActiveRecord::Base
 				puts "made it to place order"
 				browser.checkbox(:name, 'same').set
 				browser.checkbox(:name, 'legal_age').set
-				#browser.span(:id => "placeorderid").parent.click
-				browser.screenshot.save 'screenshot.png'
+				browser.span(:id => "placeorderid").parent.click
+				STDOUT.write "Pappy order submitted!"
 				
 
 				def self.send_text(phonenumber, username)
