@@ -7,7 +7,7 @@ applications:
   domain: cfapps.io
   command: bundle exec rake db:create db:migrate db:seed && bundle exec rails s -p $PORT
   services:
-  - kcoleman-papappy-elephantsql
+  - kcoleman-arlingtonpappy-elephantsql
 - name: arlingtonpappycron
   memory: 512MB
   instances: 1
