@@ -1,0 +1,114 @@
+h1 {
+  font-family: 'Fondamento', cursive;
+  text-align: center;
+  font-size: 3.5em;
+  margin: 5%;
+}
+
+body {
+  margin-top: 5%;
+  background-color: #ffefd1;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: 'Fondamento', cursive;
+  text-align: center;
+  font-size: 2em;
+  line-height: 18px;
+  margin: 0;
+}
+
+.name {
+  font-size: 1em;
+}
+
+.name a {
+  text-decoration: none;
+}
+
+.name a:hover {
+  text-decoration: underline;
+}
+
+#content-wrapper {
+  padding: 25px 1% 50px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  width: 40%;
+  float: left;
+  margin: 2.5%;
+}
+
+.right {
+  width: 40%;
+  float: right;
+  margin: 2.5%;
+}
+
+img {
+    display: block;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #666;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
