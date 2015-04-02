@@ -10,7 +10,7 @@ class Item < ActiveRecord::Base
 		pappysite = Item.find(1)
 
 		if browser.div(:class => 'product-list').exists? == true
-			STDOUT.write "There's Pappy!"
+			STDOUT.write "There's Pappy!\n"
 			pappysite.pappypresent = true
 			pappysite.save
 
@@ -54,7 +54,7 @@ class Item < ActiveRecord::Base
 				browser.checkbox(:name, 'same').set
 				browser.checkbox(:name, 'legal_age').set
 				browser.span(:id => "placeorderid").parent.click
-				STDOUT.write "Pappy order submitted!"
+				STDOUT.write "Pappy order submitted!\n"
 				
 
 				def self.send_text(phonenumber, username)
@@ -67,7 +67,7 @@ class Item < ActiveRecord::Base
 			end
 
 		else
-			STDOUT.write "No Pappy - trying again soon"
+			STDOUT.write "No Pappy - trying again soon\n"
 			pappysite.pappypresent = false
 			pappysite.save
 		end
